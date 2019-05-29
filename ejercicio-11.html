@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Practica 11 Formularios</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form method="post" action="miservidor.php">
+		 	<div>
+		 		<label for="postal">Codigo Postal:</label>
+		 		<input type="text" id="postal">
+		 	</div>
+
+		 	<div>
+		 		<label for="satisfaccion">Nivel de satisfacción del producto:</label>
+		 		<select id="satisfaccion">
+		 			<option value="1">1</option>
+		 			<option value="2">2</option>
+		 			<option value="3">3</option>
+		 			<option value="4">4</option>
+		 			<option value="5">5</option>
+		 		</select>
+		 	</div>
+
+		 	<div>
+		 		<label for="email">Email:</label>
+		 		<input type="email" id="email">
+		 	</div>
+
+		 	<div>
+		 		<label for="positivo">Puntos positivos del producto:</label>
+		 		<textarea id=”positivo”></textarea>
+		 	</div>
+
+		 	<div>
+		 		<label for="negativo">Puntos negativos del producto:</label>
+		 		<textarea id=”negativo”></textarea>
+		 	</div>
+
+		 	<div>
+		 		<label for="tecnico">Nivel de trato del servicio tecnico:</label>
+		 		<select id="tecnico">
+		 			<option value="Excelente">Excelente</option>
+		 			<option value="Bueno">Bueno</option>
+		 			<option value="Regular">Regular</option>
+		 			<option value="Pesimo">Pesimo</option>
+		 		</select>
+		 	</div>
+
+		 	<div>
+		      <label for=”servicio”>Nivel de trato del servicio tecnico:</label>
+		      <input name=”servicio” type=”radio” value=”Excelente”>Excelente 
+		      <input name=”servicio” type=”radio” value=”Bueno”> Bueno 
+		      <input name=”servicio” type=”radio” value=”Regular”> Regular 
+		      <input name=”servicio” type=”radio” value=”Pesimo”> Pesimo 
+		  	</div>
+
+		  	<div>
+		  		<input type="submit" value="Enviar">
+		  	</div>
+		</form>
+	</body>
+</html>
